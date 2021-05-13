@@ -1,0 +1,30 @@
+<template>
+  <div>
+    <el-row>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+  </div>
+</template>
+
+<script>
+export default ({
+
+})
+</script>
+
+<style lang="less" scoped>
+  @minH: 100px;
+  .bg-purple {
+    background: #d3dce6;
+  }
+  .grid-content {
+    border-radius: 4px;
+    height: @minH;
+    &:last-child {
+      background: red;
+    }
+  }
+</style>
