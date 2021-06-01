@@ -27,6 +27,16 @@ const routes = [
     path: '/border',
     name: 'border',
     component: () => import('../views/components/use-border.vue')
+  },
+  {
+    path: '/emit',
+    name: 'emit',
+    component: () => import('../views/components/use-emit-parent.vue')
+  },
+  {
+    path: '/gantt',
+    name: 'gantt',
+    component: () => import('../views/components/gantt.vue')
   }
 ]
 
